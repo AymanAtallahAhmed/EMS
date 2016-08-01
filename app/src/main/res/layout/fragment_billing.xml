@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.work.ammar.ems.BillingFragment"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="80dp"
+    android:paddingLeft="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Your Bill has reached"
+            android:layout_margin="10dp"
+            android:textSize="20sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="$16"
+                android:layout_margin="10dp"
+                android:textSize="24sp"
+                android:background="@color/colorPrimaryDark"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="update power schedule"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select month"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/dateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            android:hint="click to select"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select fee ($)"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <Button
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Bill Limit"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="See recommended power schedule"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

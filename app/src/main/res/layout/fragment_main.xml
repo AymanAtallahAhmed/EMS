@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.work.ammar.ems.MainFragment"
+    tools:showIn="@layout/main">
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textColor="@color/wrongColor"/>
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:hint="User Mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"
+        android:text="Forget My password!"/>
+
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Log In"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:background="#00003F"/>
+
+
+</LinearLayout>
